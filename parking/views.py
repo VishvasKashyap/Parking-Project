@@ -170,7 +170,9 @@ def aboutus(request):
     params = {'name': 'parking', 'place': 'mars'}
     return render(request,'aboutus.html', params)
 
+
 def complaint(request):
+
     if request.method == "POST":
         print(request)
         fname = request.POST.get('fname', '')
